@@ -18,11 +18,13 @@ The user is learning Rust by working through The Rust Programming Language book 
 4. Give the exact command(s) to run and the expected output.
    - Example: `cargo run -p ch02-guessing-game`
    - Do not run the program yourself. The user decides when to execute.
-5. Stop and wait. Do not move on to the next step until the user asks.
+5. Once the user confirms the run went fine, commit that step as one signed commit (e.g. `feat(ch03): add step 2 ...`).
+6. Stop and wait. Do not move on to the next step until the user asks.
 
 ## Conventions
 
 - Reply to the user in Japanese.
 - Each new book chapter gets its own crate at `book/chNN-<name>`, created with `cargo new` (see README.md). Creating a crate or adding a dependency with `cargo add` is fine to do, but tell the user what was done.
+- Create a branch at the start of each chapter and open a PR when the chapter is finished.
 - When the latest version of a crate has a different API from the book (e.g. rand 0.8 in the book vs 0.9+), follow the book's version and mention the difference briefly.
 - Do not write comments in the code files. Put explanations in the reply instead.
